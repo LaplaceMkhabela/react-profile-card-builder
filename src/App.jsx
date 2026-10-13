@@ -1,4 +1,8 @@
 import './App.css'
+import alicePic from './assets/alice.jpg'
+import bobPic from './assets/bob.jpg'
+import johnPic from './assets/john.jpg'
+import { Userprofile } from './UserProfile';
 
 function App() {
   const user1 = {
@@ -14,17 +18,31 @@ const user2 = {
 };
 
 const user3 = {
-  name: "Carol Williams",
+  name: "John Williams",
   job: "Backend Engineer",
   bio: "Specializes in building scalable microservices and distributed systems. Proficient in Node.js, Python, and cloud infrastructure."
 };
 
+const pic1 = {
+  image: alicePic,
+  alt: "alice"
+}
+
+const pic2 = {
+  image: bobPic,
+  alt: "bob"
+}
+
+const pic3 = {
+  image: johnPic,
+  alt: "alice"
+}
 
   return (
     <>
-      <section id="center">
-        
-      </section>
+       <Userprofile image={pic1}  profile={user1}/>
+       <Userprofile image={pic2}  profile={user2}/>
+       <Userprofile image={pic3}  profile={user3}/>
     </>
   )
 }
