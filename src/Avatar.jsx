@@ -1,7 +1,7 @@
 import './Styles.css'
 
-export function Avatar(props) {
+export function Avatar({image,alt}) {
     return (
-        <img src={props.image} alt={props.alt} class="profile-avatar"/>
+        <img src={image} alt={alt} class="profile-avatar"/>
     );
 }
