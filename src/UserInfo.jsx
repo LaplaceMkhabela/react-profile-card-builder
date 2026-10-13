@@ -1,6 +1,7 @@
 import './Styles.css'
 
-export function UserInfo({name,job,bio}) {
+export function UserInfo({profile}) {
+    const {name,job,bio} = profile
     return (
 
         <div class="profile-content">
