@@ -1,12 +1,12 @@
 import './Styles.css'
 
-export function UserInfo(props) {
+export function UserInfo({name,job,bio}) {
     return (
 
         <div class="profile-content">
-            <h2 class="profile-name">{props.name}</h2>
-            <h3 class="profile-title">{props.job}</h3>
-            <p class="profile-bio">{props.bio}</p>
+            <h2 class="profile-name">{name}</h2>
+            <h3 class="profile-title">{job}</h3>
+            <p class="profile-bio">{bio}</p>
         </div>
     );
 }
