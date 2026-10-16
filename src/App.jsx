@@ -1,7 +1,10 @@
 import './App.css'
 import alicePic from './assets/alice.jpg'
+import aliceWebp from './assets/alice.webp'
 import bobPic from './assets/bob.jpg'
+import bobWebp from './assets/bob.webp'
 import johnPic from './assets/john.jpg'
+import johnWebp from './assets/john.webp'
 import { Userprofile } from './UserProfile';
 
 function App() {
@@ -25,17 +28,20 @@ const user3 = {
 
 const pic1 = {
   image: alicePic,
-  alt: "alice"
+  webp: aliceWebp,
+  alt: "Alice Johnson"
 }
 
 const pic2 = {
   image: bobPic,
-  alt: "bob"
+  webp: bobWebp,
+  alt: "Bob Smith"
 }
 
 const pic3 = {
   image: johnPic,
-  alt: "alice"
+  webp: johnWebp,
+  alt: "John Williams"
 }
 
   return (
